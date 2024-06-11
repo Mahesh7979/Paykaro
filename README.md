@@ -3,11 +3,6 @@
 This is a description of the project.
 
 <img src="imgs/assets/demo-ss-home.png" alt="Logo" width="200" height="200">
-## Features
-
-- Feature 1
-- Feature 2
-- Feature 3
 
 ## Installation
 
