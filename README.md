@@ -1,6 +1,14 @@
 ## Paykaro
 
 This is a description of the project.
+# Paykaro
+
+This is a description of the project.
+
+![Demo Screenshot](imgs/assets/demo-ss-home.png)
+
+<img src="imgs/assets/demo-ss-home.png" alt="Demo Screenshot" width="200" height="200">
+
 
 <img src="imgs/assets/demo-ss-home.png" alt="Logo" width="200" height="200">
 ## Features
