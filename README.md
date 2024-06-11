@@ -15,19 +15,19 @@ git clone https://github.com/Mahesh7979/Paykaro.git
 cd Paykaro
 ```
 
-### Install server dependencies
+### 2. Install server dependencies
 ```sh
 cd server
 npm install
 ```
 
-### Install client dependencies
+### 3. Install client dependencies
 ```sh
 cd client
 npm install
 ```
 
-### Server Configuration
+### 4. Server Configuration
 Create a .env file in the server directory and add your MongoDB URI and any other necessary environment variables:
 ```sh
 MONGO_URI=your-mongodb-uri
@@ -36,7 +36,7 @@ JWT_SECRET=your-jwt-secret
 ```
 
 
-##  Start the Server and Client
+### 5. Start the Server and Client
 
 ```sh
 cd server
