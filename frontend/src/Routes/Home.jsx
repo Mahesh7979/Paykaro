@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 // import NavBar from "../components/NavsBar";
-import MySvg from "../assets/demo-ss-home.png";
+import MySvg from "../assets/readme-dash-img.png";
 import MyMobileSvg from '../assets/demo-ss-home-mobile.png'
 import Footer from "../components/Footer";
 import { Toaster } from "react-hot-toast";
