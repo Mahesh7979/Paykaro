@@ -5,6 +5,7 @@ import MeIcon from "../components/MeIcon";
 import Loader from "../components/Loader";
 import { useRecoilValue } from "recoil";
 import { transHistoryAtom } from "../atoms/transHistoryAtom";
+const baseUrl = import.meta.env.BASE_URL;
 
 export default function Pay() {
   const [filter, setFilter] = useState("");
@@ -18,7 +19,7 @@ export default function Pay() {
   
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/v1/user/bulk?filter=" + filter,{
+      .get(baseUrl+"/api/v1/user/bulk?filter=" + filter,{
         headers:{
           Authorization : 'Bearer ' + localStorage.getItem('token')
         }

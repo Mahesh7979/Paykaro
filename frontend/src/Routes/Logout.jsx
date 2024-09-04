@@ -2,6 +2,7 @@ import { useSetRecoilState } from "recoil";
 import { isUserAtom } from "../atoms/isUserAtom";
 import { useNavigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
+const baseUrl = import.meta.env.BASE_URL;
 export default function Logout() {
   const setUser = useSetRecoilState(isUserAtom);
   const navigate = useNavigate();

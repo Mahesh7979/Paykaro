@@ -4,6 +4,7 @@ import { isUserAtom } from "../atoms/isUserAtom";
 import { useSetRecoilState } from "recoil";
 import toast, { Toaster } from "react-hot-toast";
 import {z} from 'zod';
+const baseUrl = import.meta.env.BASE_URL;
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 export default function Login() {
@@ -24,7 +25,7 @@ export default function Login() {
 
   const onSubmit =  async (data) => {
     try {
-      const res = await axios.post("http://localhost:5000/api/v1/user/signin", {
+      const res = await axios.post(`${baseUrl}+/api/v1/user/signin`, {
         username: data.email,
         password: data.password,
       });
@@ -45,6 +46,7 @@ export default function Login() {
     } 
     catch (error) {
       toast.error("An error occurred. Please try again later.");
+      // console.log(`${baseUrl}`);
     }
   };
   

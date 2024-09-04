@@ -8,6 +8,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+const baseUrl = import.meta.env.BASE_URL;
 export default function Settings() {
   const [general, setGeneral] = useState(true);
   const setUser = useSetRecoilState(isUserAtom);
@@ -26,7 +27,7 @@ export default function Settings() {
   const onSubmit = (data) => {
       axios
         .put(
-          "http://localhost:5000/api/v1/user/update",
+          baseUrl+"/api/v1/user/update",
           {
             password: data.password,
             newPassword: data.newPassword,

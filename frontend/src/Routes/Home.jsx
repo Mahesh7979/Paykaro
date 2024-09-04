@@ -4,6 +4,7 @@ import MySvg from "../assets/readme-dash-img.png";
 import MyMobileSvg from '../assets/demo-ss-home-mobile.png'
 import Footer from "../components/Footer";
 import { Toaster } from "react-hot-toast";
+// const baseUrl = import.meta.env.BASE_URL;
 
 export default function Home() {
   const navigate = useNavigate();

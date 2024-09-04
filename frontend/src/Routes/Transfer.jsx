@@ -6,6 +6,7 @@ import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
+const baseUrl = import.meta.env.BASE_URL;
 
 export default function Transfer() {
     const [amount, setAmount] = useState(0);
@@ -35,7 +36,7 @@ export default function Transfer() {
         }
 
         try {
-            const response = await axios.post('http://localhost:5000/api/v1/account/transfer', {
+            const response = await axios.post(baseUrl+'/api/v1/account/transfer', {
                 amount,
                 to: toid
             }, {

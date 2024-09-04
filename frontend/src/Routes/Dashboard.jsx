@@ -7,7 +7,7 @@ import { useSetRecoilState } from "recoil";
 import axios from "axios";
 import { transHistoryAtom } from "../atoms/transHistoryAtom";
 import { Toaster } from "react-hot-toast";
-
+const baseUrl = import.meta.env.BASE_URL;
 export default function Dashboard() {
   const navigate = useNavigate();
   const setTransH = useSetRecoilState(transHistoryAtom);
@@ -16,7 +16,7 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/v1/user',{
+        const response = await axios.get(baseUrl+`/api/v1/user`,{
           headers:{
             Authorization : 'Bearer ' + localStorage.getItem('token')
           }

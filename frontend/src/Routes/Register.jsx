@@ -7,6 +7,7 @@ import { useSetRecoilState } from "recoil";
 import { isUserAtom } from "../atoms/isUserAtom";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
+const baseUrl = import.meta.env.BASE_URL;
 
 export default function Register() {
 
@@ -32,7 +33,7 @@ export default function Register() {
 
   const onSubmit = (data) => {
     axios
-      .post("http://localhost:5000/api/v1/user/signup", {
+      .post(baseUrl+"/api/v1/user/signup", {
         username:data.email,
         password:data.password,
         firstname:data.name,
