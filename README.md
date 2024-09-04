@@ -1,6 +1,6 @@
 # Paykaro
 
-![Demo Screenshot](imgs/assets/demo-ss-home.png)
+![Demo Screenshot](imgs/assets/readme-dash-img.png)
 
 ## Installation
 
