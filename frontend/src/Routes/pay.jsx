@@ -5,7 +5,7 @@ import MeIcon from "../components/MeIcon";
 import Loader from "../components/Loader";
 import { useRecoilValue } from "recoil";
 import { transHistoryAtom } from "../atoms/transHistoryAtom";
-const baseUrl = import.meta.env.BASE_URL;
+const baseUrl = "https://paykaro.vercel.app";
 
 export default function Pay() {
   const [filter, setFilter] = useState("");

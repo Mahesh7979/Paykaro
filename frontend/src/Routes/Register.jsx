@@ -7,7 +7,7 @@ import { useSetRecoilState } from "recoil";
 import { isUserAtom } from "../atoms/isUserAtom";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
-const baseUrl = import.meta.env.BASE_URL;
+const baseUrl = "https://paykaro.vercel.app";
 
 export default function Register() {
 

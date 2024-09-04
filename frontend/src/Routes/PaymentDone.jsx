@@ -1,5 +1,6 @@
 import { Toaster } from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom'
+// const baseUrl = import.meta.env.BASE_URL;
 
 export default function PaymentDone() {
     const navigate = useNavigate();

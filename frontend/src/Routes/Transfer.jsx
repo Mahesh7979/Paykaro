@@ -6,7 +6,7 @@ import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
-const baseUrl = import.meta.env.BASE_URL;
+const baseUrl = "https://paykaro.vercel.app";
 
 export default function Transfer() {
     const [amount, setAmount] = useState(0);

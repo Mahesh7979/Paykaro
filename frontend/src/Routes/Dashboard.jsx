@@ -7,7 +7,7 @@ import { useSetRecoilState } from "recoil";
 import axios from "axios";
 import { transHistoryAtom } from "../atoms/transHistoryAtom";
 import { Toaster } from "react-hot-toast";
-const baseUrl = import.meta.env.BASE_URL;
+const baseUrl = "https://paykaro.vercel.app";
 export default function Dashboard() {
   const navigate = useNavigate();
   const setTransH = useSetRecoilState(transHistoryAtom);

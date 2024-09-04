@@ -8,7 +8,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-const baseUrl = import.meta.env.BASE_URL;
+const baseUrl = "https://paykaro.vercel.app";
 export default function Settings() {
   const [general, setGeneral] = useState(true);
   const setUser = useSetRecoilState(isUserAtom);
